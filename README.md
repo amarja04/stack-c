@@ -21,20 +21,20 @@ push() − Pushing (storing) an element on the stack.
 
 Algorithm:
 
-begin procedure push
+       begin procedure push
 
-    if stack is full
+                     if stack is full
  
-       return null
+                              return null
     
- endif
+        endif
   
-    top<--top+1
+                      top<--top+1
     
-    stack[top]<--data
+                      stack[top]<--data
       
 
-end procedure
+       end procedure
 
 
 
@@ -43,41 +43,41 @@ pop()−Removing(accessing)anelementfromthestack.
 
 Algorithm:
 
-begin procedure pop
+           begin procedure pop
 
-    if stack is empty
+                     if stack is empty
  
-       return null
+                    return null
     
- endif
+          endif
   
-    data<-- stack[top]
+                 data<-- stack[top]
     
-    top<-- top-1
+                  top<-- top-1
     
-    return data
+            return data
       
 
-end procedure
+        end procedure
 
 
 IsEmpty: Check if the stack is empty.
 
 Algorithm:
 
-begin 
+    begin 
 
-    if top less than 1
+              if top less than 1
       
-      return true 
+               return true 
       
-   else
+    else
       
-       return false
+            return false
       
-    endif
+        endif
 
-end procedure
+    end procedure
    
    
 
@@ -86,26 +86,26 @@ IsFull: Check if the stack is full.
 
 Algorithm:
 
-begin 
+     begin 
 
-    if top equals to MAXSIZE
+               if top equals to MAXSIZE
       
-      return true 
+                   return true 
       
-   else
+     else
       
-       return false
+              return false
     
-    endif
+          endif
 
-end procedure
+     end procedure
 
 Peek: Get the value of the top element without removing it.
 
 Algorithm:
 
-begin 
+    begin 
 
-      return stack [top] 
+            return stack [top] 
       
- end procedure
+     end procedure
